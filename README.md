@@ -2,5 +2,5 @@
 
 # An example of ML Application with the pretrained model and tests.
 
-Пример для определения тональности текста.
+Пример для определения тональности текста на английском языке
 
