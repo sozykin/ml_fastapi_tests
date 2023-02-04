@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 
 class Item(BaseModel):
-    text: str
+text: str
 
 
 app = FastAPI()
