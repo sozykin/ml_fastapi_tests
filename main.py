@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from transformers import pipeline
 from pydantic import BaseModel
 
@@ -16,4 +16,8 @@ def root():
 @app.post("/predict/")
 def predict(item: Item):
     """Принимает JSON с текстом и возвращает предсказание настроения."""
-    return classifier(item.text)[0]
+    try:
+        result = classifier(item.text)[0]
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Ошибка при обработке запроса")
