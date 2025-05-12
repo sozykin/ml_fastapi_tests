@@ -8,4 +8,4 @@
 
 В примере используется [пайплайн "sentiment-analysis" без указания модели](https://huggingface.co/tasks/text-classification).
 
-Исправление по рекомендации на Code Review.
+Исправлены критичные ошибки, указаннын в замечаниях.
