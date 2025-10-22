@@ -23,4 +23,4 @@ def test_predict_negative():
                            json={"text": "I hate machine learning!"})
     json_data = response.json()
     assert response.status_code == 200
-    assert json_data['label'] == 'NEGATIVE'    
+    assert json_data['label'] == 'NEGATIVE'
