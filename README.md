@@ -4,8 +4,6 @@
 
 Пример для определения тональности текста на английском языке с помощью библиотеки Hugging Face.
 
-Тестирует GitHub Actions.
+Пример использования [GitHub Actions](https://github.com/features/actions).
 
 В примере используется [пайплайн "sentiment-analysis" без указания модели](https://huggingface.co/tasks/text-classification).
-
-Исправлены критичные ошибки, указаннын в замечаниях.
